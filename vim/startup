@@ -1,0 +1,5 @@
+docker run -it \
+    -v /Users/lvxy/go:/root/go \
+    lvxy/vim \
+    /bin/bash
+

@@ -1,0 +1,6 @@
+docker run -it \
+    --name env_use \
+    -v /Users/lvxy/go/src:/root/go/src \
+    lvxy/env_use \
+    /bin/zsh
+
