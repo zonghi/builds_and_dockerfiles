@@ -6,7 +6,7 @@ yum install -y openssh-server sudo which file curl zip unzip wget && \
 yum install -y libmicrohttpd-devel jansson-devel libnice-devel glib22-devel opus-devel libogg-devel pkgconfig  gengetopt libtool autoconf automake make gcc gcc-c++ git cmake libconfig-devel openssl-devel
 
 #upgrade libsrtp 1.5.4
-wget https://github.com/cisco/libsrtp/archive/v1.5.4.tar.gz
+#wget https://github.com/cisco/libsrtp/archive/v1.5.4.tar.gz
 tar xfv v1.5.4.tar.gz
 cd libsrtp-1.5.4
 ./configure --prefix=/usr/local --enable-openssl
@@ -14,7 +14,7 @@ make shared_library && sudo make install
 
 cd -
 
-wget https://github.com/cisco/libsrtp/archive/v2.0.0.tar.gz
+#wget https://github.com/cisco/libsrtp/archive/v2.0.0.tar.gz
 tar xfv v2.0.0.tar.gz
 cd libsrtp-2.0.0
 ./configure --prefix=/usr/local --enable-openssl
@@ -23,7 +23,7 @@ make shared_library && sudo make install
 cd -
 
 #install sofia-sip for sip-gateway plugin
-wget https://sourceforge.net/projects/sofia-sip/files/sofia-sip/1.12.11/sofia-sip-1.12.11.tar.gz
+#wget https://sourceforge.net/projects/sofia-sip/files/sofia-sip/1.12.11/sofia-sip-1.12.11.tar.gz
 tar zxf sofia-sip-1.12.11.tar.gz && cd sofia-sip-1.12.11 && ./configure --prefix=/usr/local CFLAGS=-fno-aggressive-loop-optimizations && make && make install
 
 cd -
